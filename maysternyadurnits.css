@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap'); 
+
+:root {
+    --main-color: black; 
+    --accent-color:white;
+    font-family: 'Eagle Lake', cursive;
+}
+
+#carouselProducts {
+    min-height: 500px;
+}
+
+#arouselProducts img {
+    max-height: 450px;
+}
+
+.intro {
+    max-width: 400px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+.logo-block {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+header .header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    font-family: 'Eagle Lake', cursive;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+header .menu-items {
+    font-family: 'Eagle Lake', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .menu-items a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header .menu-items a:hover {
+    border: 1px solid var(--main-color);
+}
+
+h2 {
+    font-family: 'Eagle Lake', cursive;
+}
+
+main .showone {
+    font-family: 'Eagle Lake', cursive;
+}
+
+
+A {
+    color: black;
+}
+A:visited {
+    color: black;
+}
+A:active {
+    color: black;
+}
+
+body {
+	cursor: url(../img/arrow.cur), auto;
+}
+
+a:hover {
+ cursor: url(../img/finger.cur), pointer;
+}
+
+button {
+    cursor: url(../img/finger.cur), pointer;
+}

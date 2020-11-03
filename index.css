@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap'); 
+
+:root {
+    --main-color: black; 
+    --accent-color:white;
+    font-family: 'Eagle Lake', cursive;
+}
+
+#carouselProducts {
+    min-height: 500px;
+}
+
+#arouselProducts img {
+    max-height: 450px;
+}
+
+.intro {
+    max-width: 400px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+.logo-block {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+header .header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    font-family: 'Eagle Lake', cursive;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+header .menu-items {
+    font-family: 'Eagle Lake', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .menu-items a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header .menu-items a:hover {
+    border: 1px solid var(--main-color);
+}
+
+@media (min-width: 769px) {
+    header .header-nav {
+        display: flex;
+    }
+
+    header .menu-items {
+        align-items: center;
+    }
+}
+
+header .header-banner {
+    background-image: url(../img/zviyani.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+header .header-banner h2 {
+    color: var(--accent-color);
+    font-family: 'Eagle Lake', cursive;
+    font-size: 3.5rem;
+    text-shadow: black 0 0 10px;
+} 
+
+header .header-banner h3 {
+    color: var(--accent-color);
+    font-family: 'Eagle Lake', cursive;
+    text-shadow: black 0 0 10px;
+}
+
+header .header-banner p {
+    color: var(--accent-color);
+    font-family: 'Eagle Lake', cursive;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+main .aboutus {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 5px;
+justify-content: center;
+text-align: center;
+}
+
+.plays {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+}
+
+.plays h3 {
+    border: 1px solid black; width: 185px;
+    padding: 1px;
+    text-align: center;
+}
+
+@media (min-width:600px) {
+    .actors {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+.director {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 5px;
+}
+
+.contactus {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 5px;
+}
+
+.joinus {
+    background-image: url(../img/hotkev.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.joinus h3 {
+    color: var(--accent-color);
+    font-family: 'Eagle Lake', cursive;
+    font-size: 1.25rem;
+}
+
+A {
+    color: black;
+}
+A:visited {
+    color: black;
+}
+A:active {
+    color: black;
+}
+
+@media (min-width:500px) {
+    .news {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+body {
+	cursor: url(../img/arrow.cur), auto;
+}
+
+a:hover {
+ cursor: url(../img/finger.cur), pointer;
+}
+
+button {
+    cursor: url(../img/finger.cur), pointer;
+}
