@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="img/dom.png" sizes="32x32">
         <title>Theatre Domus</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
@@ -27,46 +26,12 @@
                     <a href="#contactus">Контакти</a>
                 </div>
             </nav>
-            <section class="carousel">
-            <div id="carouselProducts" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselProducts" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselProducts" data-slide-to="1"></li>
-    <li data-target="#carouselProducts" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/zviyani.jpeg" class="d-block w-100" alt="Звіяні Голлівудом">
-      <div class="carousel-caption d-none d-md-block">
-        <h2>Звіяні Голлівудом</h2>
-        <h3>Це дуже смішно. Це смішно до сліз.</h3>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/kazka.jpeg" class="d-block w-100" alt="Майстерня дурниць">
-      <div class="carousel-caption d-none d-md-block">
-        <h2>Майстерня дурниць</h2>
-        <h3>У місті - мухозавр!</h3>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/macbeth.jpeg" class="d-block w-100" alt="Макбет">
-      <div class="carousel-caption d-none d-md-block">
-        <h2>Макбет</h2>
-        <h3>Перша англомовна вистава Театру Домус</h3>
-      </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselProducts" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselProducts" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</section>
+            <div class="header-banner">
+                <a href="zviyanihollywoodom.html" target="_blank">
+                    <h2>Звіяні Голлівудом</h2>
+                </a>
+                <h3>Незабаром у нашому театрі</h3>
+            </div>
         </header>
         <main>
             <section id="aboutus">
@@ -218,7 +183,101 @@
             <hr>
             <p>Сopyright 2020 Theatre Domus</p>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
 </html>
+
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap'); 
+
+:root {
+    --main-color: black; 
+    --accent-color:white;
+    font-family: 'Eagle Lake', cursive;
+}
+
+#carouselProducts {
+    min-height: 500px;
+}
+
+#arouselProducts img {
+    max-height: 450px;
+}
+
+.intro {
+    max-width: 400px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+.logo-block {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+header .header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    font-family: 'Eagle Lake', cursive;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+header .menu-items {
+    font-family: 'Eagle Lake', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .menu-items a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header .menu-items a:hover {
+    border: 1px solid var(--main-color);
+}
+
+h2 {
+    font-family: 'Eagle Lake', cursive;
+}
+
+main .showone {
+    font-family: 'Eagle Lake', cursive;
+}
+
+
+A {
+    color: black;
+}
+A:visited {
+    color: black;
+}
+A:active {
+    color: black;
+}
+
+body {
+	cursor: url(../img/arrow.cur), auto;
+}
+
+a:hover {
+ cursor: url(../img/finger.cur), pointer;
+}
+
+button {
+    cursor: url(../img/finger.cur), pointer;
+}

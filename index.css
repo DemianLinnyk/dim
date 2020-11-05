@@ -14,6 +14,26 @@
     max-height: 450px;
 }
 
+header .carousel h2 {
+    font-family: 'Eagle Lake', cursive;
+    font-size: 3rem;
+    color: var(--accent-color);
+    text-shadow: black 0 0 10px;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+header .carousel-inner h3 {
+    font-family: 'Eagle Lake', cursive;
+    color: var(--accent-color);
+    text-shadow: black 0 0 15px;
+    text-align: center
+}
+
+header .carousel a {
+    text-decoration: none;
+}
+
 .intro {
     max-width: 400px;
     margin-top: 150px;
@@ -21,14 +41,9 @@
 }
 
 body {
+    font-family: 'Eagle Lake', cursive;
     max-width: 980px;
     margin: auto;
-}
-
-.logo-block {
-    display: flex;
-    align-items: center;
-    padding: 5px;
 }
 
 header .header-nav {
@@ -59,54 +74,7 @@ header .menu-items a {
     padding: 5px;
 }
 
-header .menu-items a:hover {
-    border: 1px solid var(--main-color);
-}
-
-@media (min-width: 769px) {
-    header .header-nav {
-        display: flex;
-    }
-
-    header .menu-items {
-        align-items: center;
-    }
-}
-
-header .header-banner {
-    background-image: url(../img/zviyani.jpeg);
-    background-position: center;
-    background-size: cover;
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-}
-
-header .header-banner h2 {
-    color: var(--accent-color);
-    font-family: 'Eagle Lake', cursive;
-    font-size: 3.5rem;
-    text-shadow: black 0 0 10px;
-} 
-
-header .header-banner h3 {
-    color: var(--accent-color);
-    font-family: 'Eagle Lake', cursive;
-    text-shadow: black 0 0 10px;
-}
-
-header .header-banner p {
-    color: var(--accent-color);
-    font-family: 'Eagle Lake', cursive;
-    font-size: 2rem;
-    align-items: center;
-    justify-content: center;
-}
-
-a {
+body a {
     text-decoration: none;
 }
 
@@ -123,10 +91,10 @@ text-align: center;
         grid-template-columns: 1fr 1fr;
 }
 
-.plays h3 {
+main .plays h3 {
     border: 1px solid black; width: 185px;
-    padding: 1px;
     text-align: center;
+    justify-content: center;
 }
 
 @media (min-width:600px) {
@@ -160,7 +128,7 @@ grid-gap: 5px;
     flex-direction: column;
 }
 
-.joinus h3 {
+main .joinus h3 {
     color: var(--accent-color);
     font-family: 'Eagle Lake', cursive;
     font-size: 1.25rem;
