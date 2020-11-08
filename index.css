@@ -6,12 +6,18 @@
     font-family: 'Eagle Lake', cursive;
 }
 
-#carouselProducts {
-    min-height: 500px;
+body {
+    font-family: 'Eagle Lake', cursive;
+    max-width: 1100px;
+    margin: auto;
 }
 
-#arouselProducts img {
-    max-height: 450px;
+#carouselProducts {
+    min-height: 400px;
+}
+
+#carouselProducts img {
+    max-height: 550px;
 }
 
 header .carousel h2 {
@@ -23,7 +29,7 @@ header .carousel h2 {
     border: 2px solid transparent;
 }
 
-header .carousel-inner h3 {
+header .carousel h3 {
     font-family: 'Eagle Lake', cursive;
     color: var(--accent-color);
     text-shadow: black 0 0 15px;
@@ -34,44 +40,24 @@ header .carousel a {
     text-decoration: none;
 }
 
-.intro {
-    max-width: 400px;
-    margin-top: 150px;
-    text-align: center;
-}
-
-body {
-    font-family: 'Eagle Lake', cursive;
-    max-width: 980px;
-    margin: auto;
-}
-
 header .header-nav {
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 header .logo {
-    font-family: 'Eagle Lake', cursive;
     font-size: 3.5rem;
     text-align: center;
 }
 
-header .menu-items {
-    font-family: 'Eagle Lake', cursive;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-header .menu-items a {
-    display: block;
+header .navbar {
     text-decoration: none;
+    justify-content: center;
     text-transform: uppercase;
     color: var(--main-color);
-    border: 1px solid transparent;
-    padding: 5px;
+}
+
+header .navbar a:hover {
+    border: 1px solid var(--main-color);
 }
 
 body a {
@@ -86,15 +72,12 @@ justify-content: center;
 text-align: center;
 }
 
-.plays {
+@media (min-width:400px) {
+    .news {
         display: grid;
         grid-template-columns: 1fr 1fr;
-}
-
-main .plays h3 {
-    border: 1px solid black; width: 185px;
-    text-align: center;
-    justify-content: center;
+        grid-gap: 5px;
+    }
 }
 
 @media (min-width:600px) {
@@ -105,61 +88,6 @@ main .plays h3 {
     }
 }
 
-.director {
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-gap: 5px;
-}
-
-.contactus {
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-gap: 5px;
-}
-
-.joinus {
-    background-image: url(../img/hotkev.jpeg);
-    background-position: center;
-    background-size: cover;
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-main .joinus h3 {
-    color: var(--accent-color);
-    font-family: 'Eagle Lake', cursive;
-    font-size: 1.25rem;
-}
-
-A {
-    color: black;
-}
-A:visited {
-    color: black;
-}
-A:active {
-    color: black;
-}
-
-@media (min-width:500px) {
-    .news {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
-    }
-}
-
-body {
-	cursor: url(../img/arrow.cur), auto;
-}
-
-a:hover {
- cursor: url(../img/finger.cur), pointer;
-}
-
-button {
-    cursor: url(../img/finger.cur), pointer;
+main .actors p {
+    font-size: 1.3rem;
 }

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap'); 
+
+:root {
+    --main-color: black; 
+    --accent-color:white;
+    font-family: 'Eagle Lake', cursive;
+}
+
+#carouselProducts {
+    min-height: 500px;
+}
+
+#carouselProducts img {
+    max-height: 450px;
+}
+
+header .carousel h2 {
+    font-family: 'Eagle Lake', cursive;
+    font-size: 3rem;
+    color: var(--accent-color);
+    text-shadow: black 0 0 10px;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+header .carousel h3 {
+    font-family: 'Eagle Lake', cursive;
+    color: var(--accent-color);
+    text-shadow: black 0 0 15px;
+    text-align: center
+}
+
+header .carousel a {
+    text-decoration: none;
+}
+
+.intro {
+    max-width: 400px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+body {
+    font-family: 'Eagle Lake', cursive;
+    max-width: 980px;
+    margin: auto;
+}
+
+header .header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    font-family: 'Eagle Lake', cursive;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+header .menu-items {
+    font-family: 'Eagle Lake', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .menu-items a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+body a {
+    text-decoration: none;
+}
+
+main .aboutus {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 5px;
+justify-content: center;
+text-align: center;
+}
+
+@media (min-width:500px) {
+    .news {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width:600px) {
+    .actors {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+.director {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 5px;
+}
+
+.plays {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+}
+
+main .plays h3 {
+    border: 1px solid black; width: 185px;
+    text-align: center;
+    justify-content: center;
+}
+
+.contactus {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 5px;
+}
+
+.joinus {
+    background-image: url(../img/hotkev.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .joinus h3 {
+    color: var(--accent-color);
+    font-family: 'Eagle Lake', cursive;
+    font-size: 1.25rem;
+}
+
+A {
+    color: black;
+}
+A:visited {
+    color: black;
+}
+A:active {
+    color: black;
+}
+
+body {
+	cursor: url(../img/arrow.cur), auto;
+}
+
+a:hover {
+ cursor: url(../img/finger.cur), pointer;
+}
+
+button {
+    cursor: url(../img/finger.cur), pointer;
+}
