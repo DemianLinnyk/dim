@@ -12,6 +12,14 @@ body {
     margin: auto;
 }
 
+body {
+	cursor: url(../img/arrow.cur), auto;
+}
+
+a:hover {
+ cursor: url(../img/finger.cur), pointer;
+}
+
 #carouselProducts {
     min-height: 400px;
 }
@@ -77,7 +85,19 @@ text-align: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 5px;
+        text-align: justify;
     }
+}
+
+main .news a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+main .news a:hover {
+    color: var(--main-color);
+    text-decoration: none;
+    border: 0.5px solid var(--main-color);
 }
 
 @media (min-width:600px) {
@@ -90,4 +110,49 @@ text-align: center;
 
 main .actors p {
     font-size: 1.3rem;
+}
+
+main .director {
+display: grid;
+flex-direction: right;
+grid-template-columns: 1fr 1fr;
+grid-gap: 5px;
+text-align: justify;
+}
+
+main .plays {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main .plays h3 {
+    color: var(--main-color); 
+}
+
+main .plays a {
+    text-decoration: none;
+}
+
+.joinus {
+    background-image: url(../img/hotkev.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .joinus h3 {
+    color: var(--accent-color);
+    text-shadow: black 0 0 15px;
+    font-family: 'Eagle Lake', cursive;
+    font-size: 3.5rem;
+}
+
+main .contactus {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 5px;
 }
