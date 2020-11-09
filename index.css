@@ -16,8 +16,8 @@ body {
 	cursor: url(../img/arrow.cur), auto;
 }
 
-a:hover {
- cursor: url(../img/finger.cur), pointer;
+body a:hover {
+    cursor: url(../img/finger.cur), pointer;
 }
 
 #carouselProducts {
@@ -72,23 +72,6 @@ body a {
     text-decoration: none;
 }
 
-main .aboutus {
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-gap: 5px;
-justify-content: center;
-text-align: center;
-}
-
-@media (min-width:400px) {
-    .news {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
-        text-align: justify;
-    }
-}
-
 main .news a {
     color: var(--main-color);
     text-decoration: none;
@@ -100,31 +83,6 @@ main .news a:hover {
     border: 0.5px solid var(--main-color);
 }
 
-@media (min-width:600px) {
-    .actors {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
-    }
-}
-
-main .actors p {
-    font-size: 1.3rem;
-}
-
-main .director {
-display: grid;
-flex-direction: right;
-grid-template-columns: 1fr 1fr;
-grid-gap: 5px;
-text-align: justify;
-}
-
-main .plays {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 main .plays h3 {
     color: var(--main-color); 
 }
@@ -133,10 +91,16 @@ main .plays a {
     text-decoration: none;
 }
 
+main .plays p {
+    color: var(--main-color); 
+    text-decoration: none;
+}
+
 .joinus {
+    position: relative;
     background-image: url(../img/hotkev.jpeg);
-    background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     min-height: 600px;
     display: flex;
     align-items: center;
@@ -152,7 +116,7 @@ main .joinus h3 {
 }
 
 main .contactus {
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
 }
