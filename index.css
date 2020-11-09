@@ -96,6 +96,20 @@ main .plays p {
     text-decoration: none;
 }
 
+main .media h3 {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+main .media a {
+    text-decoration: none;
+}
+
+main .media p {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
 .joinus {
     position: relative;
     background-image: url(../img/hotkev.jpeg);
