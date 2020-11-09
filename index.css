@@ -6,6 +6,11 @@
     font-family: 'Eagle Lake', cursive;
 }
 
+header .logo a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
 body {
     font-family: 'Eagle Lake', cursive;
     max-width: 1100px;
@@ -96,6 +101,10 @@ main .plays p {
     text-decoration: none;
 }
 
+.vystavy a {
+    color: var(--main-color);
+}
+
 main .media h3 {
     color: var(--main-color);
     text-decoration: none;
@@ -133,4 +142,10 @@ main .contactus {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
+}
+
+.vy h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
