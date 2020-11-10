@@ -131,11 +131,11 @@ main .media p {
     flex-direction: column;
 }
 
-main .joinus h3 {
+main .joinus h4 {
     color: var(--accent-color);
     text-shadow: black 0 0 15px;
     font-family: 'Eagle Lake', cursive;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 main .contactus {
